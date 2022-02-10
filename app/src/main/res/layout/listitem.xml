@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="15dp"
+    android:layout_marginEnd="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            android:background="@drawable/btn_redond">
+
+
+            <ImageView
+                android:id="@+id/imgEquipo1"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@drawable/img" />
+
+            <TextView
+                android:id="@+id/nomb1"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEquipo1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:text="Nombre"
+                android:textAlignment="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/coffeeName"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="64dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="12dp"
+                android:layout_toStartOf="@+id/imgEquipo2"
+                android:layout_toEndOf="@+id/imgEquipo1"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                tools:text="Fecha/Hora" />
+
+            <TextView
+                android:id="@+id/clickheretoorder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/coffeeName"
+                android:layout_marginStart="22dp"
+                android:layout_marginLeft="23dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="22dp"
+                android:layout_toStartOf="@+id/nom2"
+                android:layout_toEndOf="@+id/nomb1"
+                android:layout_toRightOf="@+id/imgEquipo1"
+                android:text="Jornada 4 de 17"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:id="@+id/imgEquipo2"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                app:srcCompat="@drawable/atlas" />
+
+            <TextView
+                android:id="@+id/nom2"
+                android:layout_width="64dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgEquipo1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="15dp"
+                android:text="Nombre"
+                android:textColor="@color/white"
+                tools:textAlignment="center" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
